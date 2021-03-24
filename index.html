@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Landing Page</title>
+    <link rel="stylesheet" href="src/style.css">
+    </head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="assets/logo.png"></a>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="assets/bg.jpg" class="bg">
+
+        <div class="content">
+            <img src="assets/name.png" class="movieTitle">
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus libero laboriosam laborum saepe deleniti 
+                quaerat omnis voluptatem harum, velit placeat iusto ratione voluptates, itaque vel tempora asperiores porro, 
+                inventore veritatis!
+            </p>
+
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo()"><img src="assets/play.png"> Watch Trailer</a>
+    </div>
+
+<div class="trailer">
+    <video src="assets/video.mp4" controls="true"></video>
+    <img src="assets/close.png" class="close" onclick="toggleVideo()">
+</div>
+
+</body>
+    <script src="src/script.js"></script>
+    <script src="https://yagasaki7k.github.io/custom-scripts/font-awesome.js"></script>
+</html>
